@@ -14,11 +14,11 @@ public enum Planets {
     VENUS("Venus", "225", 0),
     EARTH("Earth", "365", 1),
     MARS("Mars", "687", 2),
-    JUPITER("Jupiter", "4333", 95),
-    SATURN("Saturn", "10759", 146),
-    URANUS("Uranus", "30687", 28),
-    NEPTUNE("Neptune", "60200", 16),
-    PLUTO("Pluto", "", 5);
+    JUPITER("Jupiter", "4,333", 95),
+    SATURN("Saturn", "10,759", 146),
+    URANUS("Uranus", "30,687", 28),
+    NEPTUNE("Neptune", "60,200", 16),
+    PLUTO("Pluto", "90,560", 5);
 
     private final String planetName;
     private final String yearLength;
