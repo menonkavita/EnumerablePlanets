@@ -8,12 +8,10 @@
 
 </head>
 <body>
+<!-- Both the controllers and data packages need to within the enumerableplanets package-->
+<!-- under org.launchcode for this to work-->
+
     <h1>Pick a planet:</h1>
-
-<!--    <ol>-->
-<!--        <li th:each="planet : ${planets}" th:text="${planet.planetName}"></li>-->
-<!--    </ol>-->
-
 
 <!--    <ol>-->
 <!--        <th:block th:each="planet : ${planets}">-->
@@ -31,12 +29,12 @@
             </th>
         </tr>
         </thead>
-<!--        <tr>-->
-<!--            <td th:text="${planet.yearLength} + ' Earth days in one year.'"></td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td th:text="${planet.numOfMoons} + 'Number of Moons.'"></td>-->
-<!--        </tr>-->
+        <tr>
+            <td th:text="${planet.yearLength} + ' Earth days in one year'"></td>
+        </tr>
+        <tr>
+            <td th:text="${planet.numOfMoons} + ' Moons'"></td>
+        </tr>
     </table>
 
 </body>
