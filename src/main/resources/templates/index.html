@@ -10,33 +10,28 @@
 <body>
     <h1>Pick a planet:</h1>
 
-<!--    <ol>-->
-<!--        <li th:each="planet : ${planets}" th:text="${planet.planetName}"></li>-->
-<!--    </ol>-->
-
-
-<!--    <ol>-->
+<!--    <ul>-->
 <!--        <th:block th:each="planet : ${planets}">-->
 <!--            <li th:text="${planet.planetName}">1</li>-->
-<!--&lt;!&ndash;            <li th:text="${planet.yearLength}">2</li>&ndash;&gt;-->
-<!--&lt;!&ndash;            <li th:text="${planet.numOfMoons}">3</li>&ndash;&gt;-->
+<!--            <li th:text="${planet.yearLength}">2</li>-->
+<!--            <li th:text="${planet.numOfMoons}">3</li>-->
 <!--        </th:block>-->
-<!--    </ol>-->
+<!--    </ul>-->
 
 
-    <table th:each="planet : ${planets}" class="table table-striped">
+    <table th:each="p : ${planets}" class="table table-striped">
         <thead >
         <tr>
-            <th th:text="${planet.planetName}">
+            <th th:text="${p.planetName}">
             </th>
         </tr>
         </thead>
-<!--        <tr>-->
-<!--            <td th:text="${planet.yearLength} + ' Earth days in one year.'"></td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td th:text="${planet.numOfMoons} + 'Number of Moons.'"></td>-->
-<!--        </tr>-->
+
+        <tr>
+            <td th:text="${p.yearLength} + ' Earth days in one year.'"></td>
+        </tr>
+        <tr>
+            <td th:text="${p.numOfMoons} + ' Moons.'">
     </table>
 
 </body>
